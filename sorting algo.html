@@ -1,0 +1,153 @@
+<!DOCTYPE html>    
+<html>
+<head>
+    <title> Sorting Algorithm</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>   
+<body> 
+    <header>
+   <h1><p style="color: whitesmoke;text-align: center"><b>Sorting Bringing Order to the World</b></p></h1>
+
+<p style="color: yellow" >
+<br>◼ Selection Sort<br>
+<br>◼ Bubble Sort<br>
+<br>◼ Insertion Sort<br>
+<br>◼ Merge Sort<br>
+<br>◼ Quick Sort<br>
+<br>◼ Heap<br>     
+</p>
+      
+
+<h1><p style ="color: ghostwhite;text-align: center;text-shadow: 2px 2px"><em>Selection Sort</em></p></h1>  
+        <br>  <br>  <br>
+       
+        <h2><p  style="color: lavenderblush">The selection sort algorithm sorts an array by repeatedly finding the minimum element<br> 
+            (considering ascending order) from unsorted part and putting it at the beginning.<br> 
+            The algorithm maintains two subarrays in a given array.<br> 
+
+<br> 1) The subarray which is already sorted.<br> 
+<br> 2) Remaining subarray which is unsorted.<br> 
+
+<br> In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.<br> 
+<br> <br> 
+Following example explains the above steps: </p></h2>
+        <br> <br> 
+    <img src="selectionsort.webp"  class="center" width="600" height="600">
+        <br> <br>
+        <h1><p style="color: whitesmoke;text-align: center"><em>Algorithm</em></p></h1>
+       <p style="color:white;text-align: center"> <br>
+       <br> arr[] = 64 25 12 22 11<br>
+
+ <br> Find the minimum element in arr[0...4]<br>
+<br> and place it at beginning<br>
+<br>11 25 12 22 64<br>
+
+<br> Find the minimum element in arr[1...4]<br>
+<br> and place it at beginning of arr[1...4]<br>
+<br>11 12 25 22 64
+
+<br>Find the minimum element in arr[2...4]<br>
+<br> and place it at beginning of arr[2...4]<br>
+ <br> 12 22 25 64<br>
+
+<br> Find the minimum element in arr[3...4]<br>
+<br> and place it at beginning of arr[3...4]<br>
+        <br>11 12 22 25 64 <br></p>
+        <img src="selectionflow.png"  class="center" width="600" height="600">
+        <br> <br>
+        <h1><p style ="color: ghostwhite;text-align: center;text-shadow: 2px 2px"><em>Bubble Sort</em></p></h1>  
+        <br>  <br>  <br>
+        <h2><p style="color: floralwhite">Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements<br> if they are in wrong order.<br>
+
+Example:<br>
+<br>First Pass:<br>
+<br>( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), <br>Here, algorithm compares the first two elements, and swaps since 5 > 1.<br>
+<br>( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), <br>Swap since 5 > 4<br>
+<br>( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), <br>Swap since 5 > 2<br>
+<br>( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ),<br> Now, since these elements are already in order (8 > 5), algorithm does not swap them.<br>
+<br>
+<br>Second Pass:<br>
+<br>( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )<br>
+<br>( 1 4 2 5 8 ) –> ( 1 2 4 5 8), <br> Swap since 4 > 2
+<br>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+(<br> 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )<br>
+Now, the array is already sorted, but our algorithm does not know if it is completed.<br> The algorithm needs one whole pass without any swap to know it is sorted.<br>
+
+<br>Third Pass:
+<br>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+<br>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+<br>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+<br>(1 2 4 5 8 ) –> ( 1 2 4 5 8 )</p></h2>
+        <br>
+        <img src="bubblesort.webp"  class="center" width="600" height="700">
+        <br><br>
+        
+  <h1><p style ="color: whitesmoke;text-align: center;text-shadow: 2px 2px"><em>Insertion Sort</em></p></h1>  
+        <br>  <br>  <br> 
+        <h2><p style="color: antiquewhite">Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.<br> The array is virtually split into a sorted and an unsorted part.<br> Values from the unsorted part are picked and placed at the correct position in the sorted part.<br><br></p></h2>
+            
+<h1><p style="color: whitesmoke;text-align: center"><em>Algorithm</em></p></h1>
+        <h2><p style="color:whitesmoke"><br>To sort an array of size n in ascending order: <br>
+<br>1: Iterate from arr[1] to arr[n] over the array. <br>
+<br>2: Compare the current element (key) to its predecessor.<br> 
+<br>3: If the key element is smaller than its predecessor, compare it to the elements before.<br> Move the greater elements one position up to make space for the swapped element.<br></p></h2><br><br>
+<img src="insertionsort.png"  class="center" width="600" height="700">
+        <br><br>
+        
+         <h1><p style ="color: whitesmoke;text-align: center;text-shadow: 2px 2px"><em>Merge Sort</em></p></h1>  
+        <br>  <br>  <br>
+        <h2><p style="color: ghostwhite">Like QuickSort, Merge Sort is a Divide and Conquer algorithm.<br> It divides the input array into two halves, calls itself for the two halves,<br> and then merges the two sorted halves.<br> The merge() function is used for merging two halves.<br> The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.<br>See the following C implementation for details.<br></p></h2>
+        <br>
+        <h2><p style="color: ghostwhite">MergeSort(arr[], l,  r)<br>
+<br>If r > l<br>
+    <br> 1. Find the middle point to divide the array into two halves:  
+           <br>  middle m = l+ (r-l)/2
+    <br> 2. Call mergeSort for first half:   
+            <br> Call mergeSort(arr, l, m)
+    <br> 3. Call mergeSort for second half:
+             <br>Call mergeSort(arr, m+1, r)
+     <br>4. Merge the two halves sorted in step 2 and 3:
+            <br> Call merge(arr, l, m, r)</p></h2>
+        <br><br>
+        <img src="mergesort.png"  class="center" width="600" height="700">
+        <br><br>
+         <h1><p style ="color: whitesmoke;text-align: center;text-shadow: 2px 2px"><em>Quick sort</em></p></h1>
+           <br>  <br>  <br>
+        <h2><p style="color:ghostwhite"> 
+
+<br>Like Merge Sort, QuickSort is a Divide and Conquer algorithm.<br> It picks an element as pivot and partitions the given array around the picked pivot.<br> There are many different versions of quickSort that pick pivot in different ways. <br>
+
+   <br> Always pick first element as pivot.<br>
+   <br> Always pick last element as pivot .<br>
+   <br> Pick a random element as pivot.<br>
+   <br> Pick median as pivot.<br>
+
+<br>The key process in quickSort is partition(). <br>Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array<br> and put all smaller elements (smaller than x) before x, <br>and put all greater elements (greater than x) after x. All this should be done in linear time.<br></p></h2>
+        <img src="quicksort.png"  class="center" width="600" height="700"> 
+        <br><br>
+    <h1><p style ="color: whitesmoke;text-align: center;text-shadow: 2px 2px"><em>Heap Sort</em></p></h1>
+           <br>  <br>  <br>    
+        <h2><p style="color: ghostwhite">Heap sort is a comparison based sorting technique based on Binary Heap data structure.<br> It is similar to selection sort where we first find the maximum element and place the maximum element at the end. <br>We repeat the same process for the remaining elements.<br>
+
+<br>What is Binary Heap?<br> 
+<br>Let us first define a Complete Binary Tree.<br> A complete binary tree is a binary tree in which every level, except possibly the last,<br> is completely filled, and all nodes are as far left as possible <br>
+<br>A Binary Heap is a Complete Binary Tree where items are stored in a special order such that value in a parent node is greater(or smaller) than the values in its two children nodes.<br> The former is called as max heap and the latter is called min-heap.<br> The heap can be represented by a binary tree or array.<br>
+
+<br>Why array based representation for Binary Heap?<br> 
+<br>Since a Binary Heap is a Complete Binary Tree, it can be easily represented as an array and the array-based representation is space-efficient.<br> If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and right child by 2 * I + 2 (assuming the indexing starts at 0).<br>
+
+<br>Heap Sort Algorithm for sorting in increasing order:<br> 
+<br>1. Build a max heap from the input data.<br> 
+<br>2. At this point, the largest item is stored at the root of the heap.<br> Replace it with the last item of the heap followed by reducing the size of heap by 1.<br> Finally, heapify the root of the tree. 
+<br>3. Repeat step 2 while size of heap is greater than 1.<br>
+
+<br>How to build the heap?<br> 
+<br>Heapify procedure can be applied to a node only if its children nodes are heapified.<br> So the heapification must be performed in the bottom-up order.<br>
+<br>Lets understand with the help of an example:<br>
+   <img src="heapsort.webp"  class="center" width="700" height="700">  </p></h2>
+</header>
+    
+</body>    
+</html>  
+
+       
